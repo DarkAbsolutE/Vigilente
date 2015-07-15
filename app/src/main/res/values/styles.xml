@@ -5,4 +5,52 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="btn">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="title_bar">
+        <item name="android:textColor">#d9f3ff</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="textoInfo">
+        <item name="android:textColor">@color/enfasisNaraja</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">wrap_content</item>
+
+    </style>
+    <style name="logoLogin">
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_height">180dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:paddingTop">20dp</item>
+    </style>
+
+    <style name="next">
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:background">@drawable/abc_textfield_default_mtrl_alpha</item>
+    </style>
+
+    <style name="imgPreview">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_marginTop">25dp</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <style name="imgDelitos">
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
 </resources>
