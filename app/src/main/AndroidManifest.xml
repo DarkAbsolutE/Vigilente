@@ -9,13 +9,26 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".views.Tutorial"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"/>
+
+        <activity android:name=".views.TandC"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"/>
+
+        <activity android:name=".Camera"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"/>
     </application>
 
 </manifest>
