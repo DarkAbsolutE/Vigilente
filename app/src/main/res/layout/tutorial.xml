@@ -3,9 +3,23 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
+    <include
+        android:layout_weight=".5"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Tutorial"/>
+        layout="@layout/tutorial_view_1"/>
+
+    <include
+        android:layout_weight=".5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/tutorial_view_2"/>
+
+    <Button
+        android:layout_weight=".8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="next"
+        android:onClick="nextView"/>
 
 </LinearLayout>
