@@ -25,7 +25,7 @@ public class PreferencesManager extends PreferenceActivity {
         return preferences.getLong(registration, 0);
     }
 
-    public static void SavePreferencesGuardaPreferencias(String registration, String value, Context context){
+    public static void SavePreferences(String registration, String value, Context context){
         SharedPreferences preferences =  context.getSharedPreferences("Status", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = preferences.edit();
         editor.putString(registration, value);

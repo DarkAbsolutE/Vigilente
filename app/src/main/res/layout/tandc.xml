@@ -4,7 +4,20 @@
     android:layout_height="match_parent">
 
     <TextView
+        android:id="@+id/TandC"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:text="T and C"/>
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:onClick="nextCamera"/>
+
 </LinearLayout>
