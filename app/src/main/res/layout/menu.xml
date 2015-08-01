@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SlidingPaneLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/slidingPane"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:choiceMode="singleChoice"
+        android:background="#F2F2F2">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/checkbox_selected"/>
+
+            <Button
+                android:id="@+id/mnuReportar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F2F2F2"
+                android:textColor="#371733"
+                android:text="Reportar"
+                android:onClick="onClickMenuItem"/>
+
+            <Button
+                android:id="@+id/mnuSitio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F2F2F2"
+                android:textColor="#371733"
+                android:text="Ir al sitio"
+                android:onClick="onClickMenuItem"/>
+
+            <Button
+                android:id="@+id/mnuAbout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F2F2F2"
+                android:textColor="#371733"
+                android:text="Acerca de"
+                android:onClick="onClickMenuItem"/>
+
+            <Button
+                android:id="@+id/mnuDelito"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F2F2F2"
+                android:textColor="#371733"
+                android:text="Delitos Electorales"
+                android:onClick="onClickMenuItem"/>
+
+            <Button
+                android:id="@+id/mnuTerminos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F2F2F2"
+                android:textColor="#371733"
+                android:text="Términos y condiciones"
+                android:onClick="onClickMenuItem"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primary_dark_material_dark"
+        android:orientation="vertical">
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/titlebar" />
+
+        <RelativeLayout
+            android:id="@+id/includePoliticas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible">
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/tandc" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v4.widget.SlidingPaneLayout>
