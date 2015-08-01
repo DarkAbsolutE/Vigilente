@@ -26,7 +26,7 @@ public class MainActivity extends Activity {
     public void changeView() {
         //Change to view camera, report or reports
         if (check() == 3) {
-            Intent intent = new Intent(this, Camera.class);
+            Intent intent = new Intent(this, ViewCamera.class);
             startActivity(intent);
             finish();
         }
@@ -61,11 +61,11 @@ public class MainActivity extends Activity {
         }
         //Check for change to view t&c and not show the view tutorial
         else if (PreferencesManager.ReadPreferences("tutorial", this).equals("1")) {
-            return 1;
+            return 2;
         }
         //Check for change to view tutorial and not show the view t&c
         else if (PreferencesManager.ReadPreferences("t&c", this).equals("1")) {
-            return 2;
+            return 1;
         }
         //Check for change to view tutorial and show the view t&c
         else {
